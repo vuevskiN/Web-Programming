@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to VirtualServerController.create or VirtualServerController.update,
+     depending on whether we are creating or editing an entity -->
+
+<!-- ako postoi server objekt POST ke se izvrshi na /VirtualServers/{id}  - EDIT
+     ako ne postoi server objekt POST ke se izvrshi na /VirtualServers    - ADD
+     -->
+<form th:method="POST" th:action="@{${server!=null}? '/VirtualServers/' + ${server.id} : '/VirtualServers'}">
+    <div>
+        <label for="f1">Instance Name</label>
+        <input type="text"
+               id="f1"
+               name="instanceName"
+               th:value="${server?.instanceName}"
+               required>
+    </div>
+    <!--
+         sekoe <input> pole mora da ima atribut name="" koj e ist na imeto na soodvetnata vlezna promenliva vo
+         controller funkcijata.
+         th:value vo <input> se koristi za da imame vekje vnesena vrednost vo poleto,
+         {server?.instanceName} ako postoi objekt server togas vrednosta na ova <input> pole e server.instanceName
+         -->
+    <div>
+        <label for="f2">IPAddress</label>
+        <input type="text"
+               id="f2"
+               name="ipAddress"
+               th:value="${server?.ipAddress}"
+               required>
+    </div>
+    <div>
+        <label for="f6">Launch Date</label>
+        <input type="date"
+               id="f6"
+               name="launchDate"
+               th:value="${server?.launchDate}"
+               required>
+    </div>
+    <div>
+        <label>OSType</label><br/>
+        <select id="f4" name="osType">
+            <!-- For each OS Type you should have one <option> like below  -->
+            <option th:each="type:${types}"
+                    th:value="${type.toString()}"
+                    th:selected="${server!=null and server.OSType == type}"
+                    th:text="${type.name}"> [OSType_name]</option>
+        </select>
+        <!--
+        za site sto se <select> <option> mora da ima th:each, th:value i th:text
+        dopolnitelno mora da ima i th:selected za da se znae koja opcija treba da e pre selektirana
+        ${server!=null and server.OSType == type} ako server objekt ne e null i negoviot OSType ne e null
+        Ovoj primer raboti za ENUMs
+        -->
+    </div>
+    <div>
+        <label>Owners</label><br/>
+        <select id="f5" name="owners" multiple>
+            <!-- For each owner you should have one <option> like below  -->
+            <option th:each="u:${users}"
+                    th:value="${u.id}"
+                    th:selected="${server!=null and server.owners != null and server.owners.contains(u)}"
+                    th:text="${u.username}"> [owner.username]</option>
+        </select>
+        <!--
+        th:selected prvo proveruva dali ima server, pa dali toj server ima owners i ako ima owners bara koi owners se poklapaat
+        -->
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/VirtualServers" type="button" class="btn btn-primary">Back to VirtualServers</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <input type="hidden" id="f3" value="f3" required>
+    </ul>
+</div>
+
+</body>
+</html>

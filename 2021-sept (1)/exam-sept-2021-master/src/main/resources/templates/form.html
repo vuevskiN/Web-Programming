@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to NewsController.create or NewsController.update,
+     depending on whether we are creating or editing an entity -->
+<form method="post" th:action="@{${n!=null}? '/news/' + ${n.id}:'/news'}">
+    <div>
+        <label for="name">Name</label>
+        <input type="text"
+               id="name"
+               name="name"
+               th:value="${n?.name}"
+               required>
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <input type="text"
+               id="description"
+               name="description"
+               th:value="${n?.description}"
+               required>
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input type="text"
+               id="price"
+               name="price"
+               th:value="${n?.price}"
+               required>
+    </div>
+    <div>
+        <label>News Type</label><br/>
+        <select id="type" name="type" >
+            <!-- For each type you should have one <option> like below  -->
+            <option th:each="type:${types}" th:value="${type}" th:text="${type.toString()}"
+                    th:selected="${n?.type?.equals(type)}"
+            > [type.name]</option>
+        </select>
+    </div>
+    <div>
+        <label>News category</label><br/>
+        <select id="category" name="category">
+            <!-- For each location you should have one <option> like below  -->
+            <option value="[category.id]"
+                    th:each="cat:${categories}" th:value="${cat.id}"
+                    th:text="${cat.name}" th:selected="${n?.category?.name?.equals(cat.name)}"
+            > [category.name]</option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/news" type="button" class="btn btn-primary">Back to news</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

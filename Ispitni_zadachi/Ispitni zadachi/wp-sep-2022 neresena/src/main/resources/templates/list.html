@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<div>
+    <!-- The form below should invoke the method MatchesController.showMatches -->
+    <form id="filter-form">
+        <label for="price">Price</label>
+        <input id="price" type="number" name=""/>
+        <label for="type">Type</label>
+        <select id="type" name="">
+            <option value="">All</option>
+            <!-- For each type you should have one <option> like below  -->
+            <option value="[type]"> [type.name]</option>
+        </select>
+        <button id="filter" type="submit">Filter</button>
+    </form>
+    <div>
+        <!-- MatchesController.showAdd -->
+        <a href="" class="add-item">
+            Add new match
+        </a>
+    </div>
+    <table>
+        <tr>
+            <th>Match name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Follows</th>
+            <th>Actions</th>
+        </tr>
+        <!-- For each match you should have one <tr> like below -->
+        <tr class="item">
+            <td>[match.name]</td>
+            <td>[match.description]</td>
+            <td>[match.price]</td>
+            <td>[match.type]</td>
+            <td>[match.location]</td>
+            <td>[match.follows]</td>
+            <td>
+                <!-- MatchesController.delete -->
+                <form>
+                    <button type="submit" class="delete-item">Delete</button>
+                </form>
+                <!-- MatchesController.showEdit -->
+                <a href="" class="edit-item">Edit</a>
+                <!-- MatchesController.follow -->
+                <form>
+                    <button type="submit" class="follow-item">Follow match</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>

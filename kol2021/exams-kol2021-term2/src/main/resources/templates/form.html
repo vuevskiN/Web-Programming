@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to MenuController.create or  MenuController.update, depending on whether we are
+creating or editing a menu -->
+<form>
+    <div>
+        <label for="restaurantName">Restaurant Name</label>
+        <input type="text"
+               id="restaurantName"
+               name=""
+               required>
+    </div>
+
+    <div>
+        <label>Menu Type</label><br/>
+        <select id="menuType" name="menuType">
+            <!-- For each category you should have one <option> like below  -->
+            <option value="[cat.ID]"> [cat.name]</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Menu Items</label><br/>
+        <select id="menuItems" name="menuItems" multiple="multiple" size="5">
+            <!-- For each category you should have one <option> like below  -->
+            <option value="[menuItem.ID]"> [menuItem.name]</option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/menu" type="button" class="btn btn-primary">Back to menus</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

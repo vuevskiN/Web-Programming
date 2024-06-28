@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to PostsController.create or PostsController.update,
+     depending on whether we are creating or editing a post -->
+<form method="post" th:action="@{${post!= null}? '/posts/'+${post?.id} : '/posts' }">
+    <div>
+        <label for="title">Title</label>
+        <input type="text"
+               id="title"
+               name="title"
+               th:value="${post?.title}"
+               required>
+    </div>
+    <div>
+        <label for="content">Content</label>
+        <input type="date"
+               id="content"
+               name="content"
+               th:value="${post?.content}"
+               required>
+    </div>
+    <div>
+        <label for="dateCreated">Date of Creation</label>
+        <input type="text"
+               id="dateCreated"
+               name="dateCreated"
+               th:value="${post?.dateCreated}"
+               required>
+    </div>
+    <div>
+        <label for="postType">Type</label><br/>
+        <select id="postType" name="postType" size="5">
+            <!-- For each postType you should have one <option> like below  -->
+            <option
+                th:each="type:${types}"
+                th:value="${type}"
+                th:text="${type}"
+                th:selected="${post?.getPostType()?.equals(type)}"
+            >[postType]</option>
+        </select>
+    </div>
+    <div>
+        <label>Tag</label><br/>
+        <select id="tag" name="tags" multiple="multiple" size="5">
+            <!-- For each tag you should have one <option> like below  -->
+            <option
+                    th:each="tag:${tags}"
+                    th:value="${tag.id}"
+                    th:text="${tag.name}"
+                    th:selected="${post?.getTags()?.equals(tag)}"
+            >[tag.name]</option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/posts" type="button" class="btn btn-primary">Back to posts</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

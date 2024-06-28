@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<div>
+    <!-- The form below should invoke the method EventsController.showEvents -->
+    <form id="filter-form">
+        <label for="price">Price</label>
+        <input id="price" type="text" name="price"/>
+        <label for="type">Type</label>
+        <select id="type" name="type">
+            <option value="">All</option>
+            <!-- For each event type you should have one <option> like below  -->
+            <option
+                    th:each="type:${types}"
+                    th:text="${type}"
+                    th:value="${type}"
+                    value="[type]"> [type.name]</option>
+        </select>
+        <button id="filter" type="submit">Filter</button>
+    </form>
+    <div>
+        <!-- EventsController.showAdd -->
+        <a href="/events/add" class="add-item" sec:authorize="hasRole('ROLE_ADMIN')">
+            Add new event
+        </a>
+    </div>
+    <table>
+        <tr>
+            <th>Event name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Likes</th>
+            <th>Actions</th>
+        </tr>
+        <!-- For each event you should have one <tr> like below -->
+        <tr class="item" th:each="event:${events}">
+            <td th:text="${event.name}">[event.name]</td>
+            <td th:text="${event.description}">[event.description]</td>
+            <td th:text="${event.price}">[event.price]</td>
+            <td th:text="${event.type}">[event.type]</td>
+            <td th:text="${event.location}">[event.location]</td>
+            <td th:text="${event.likes}">[event.likes]</td>
+            <td>
+                <!-- EventsController.delete -->
+                <form method="post" th:action="@{'/events/{id}/delete'(id=${event.getId()})}" sec:authorize="hasRole('ROLE_ADMIN')">
+                    <button type="submit" class="delete-item">Delete</button>
+                </form>
+                <!-- EventsController.showEdit -->
+                <a th:href="@{'/events/{id}/edit'(id=${event.getId()})}" class="edit-item" sec:authorize="hasRole('ROLE_ADMIN')">Edit</a>
+                <!-- EventsController.likeEvent -->
+                <form method="post" th:action="@{'/events/{id}/like'(id=${event.getId()})}" sec:authorize="hasRole('ROLE_USER')">
+                    <button type="submit" class="like-item">Like Event</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>

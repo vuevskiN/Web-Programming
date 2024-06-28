@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5c6d2cf-04fa-40f9-aa6f-81cb44ce77c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../AIPS/JunskaIspitna/JunskaIspitna/JunskaIspitna.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MavenProgamiranje/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../faks/img/prvkoll/.idea/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/.idea/Испитни задачи.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/2021-sept neresena/.idea/2021-sept neresena.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/VP-exams-master/kol2022-g2/g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/june-2022 neresena-Nikita-reshenie/.idea/june-2022 neresena.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/june-2022 resena/.idea/june-2022 resena.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g1-reshena/.idea/kol2022-g1-reshena.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2 - Nikita_reshenie/.idea/kol2022-g2 - Nikita_reshenie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2 - Nikita_reshenie/kol2022-g2-updated/g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/kol2022-g2-resheni.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-resheni/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2-updated/g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2/.idea/kol2022-g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ispitni_zadachi/Ispitni zadachi/kol2022-g2/kol2022-g2-updated/g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kol2022-g2/kol2022-g2-updated/g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/Br-Ba/.idea/Br-Ba.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/Example_2/.idea/Example_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/Exercise-Example/.idea/Exercise-Example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/OnVD_Bussiness/.idea/OnVD_Bussiness.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/Styles Conference/.idea/Styles Conference.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/_illustrator/.idea/1598968489388_illustrator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/aqueous/.idea/aqueous.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/chess/.idea/chess.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Факс/Veb Dizajn/ONVD prakticno/uncovered/.idea/uncovered.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hsA4LglRwGjGitdFdVzQCvPuff" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.SeleniumScenarioTest">
+    <configuration name="SeleniumScenarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jan2024-g2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.jan2024g2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.jan2024g2" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.jan2024g2.SeleniumScenarioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jan2024G2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="jan2024-g2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wp.jan2024g2.Jan2024G2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SeleniumScenarioTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5c6d2cf-04fa-40f9-aa6f-81cb44ce77c2" name="Changes" comment="" />
+      <created>1718372220798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718372220798</updated>
+      <workItem from="1718372224559" duration="12748000" />
+      <workItem from="1718459522334" duration="220000" />
+      <workItem from="1718459766227" duration="43000" />
+      <workItem from="1718688690431" duration="785000" />
+      <workItem from="1718794805510" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
